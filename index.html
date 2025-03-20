@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Gênesis</title>
+    <!-- Importando fontes do Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #18518f;
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 2.8rem;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .container {
+            flex: 1;
+            padding: 40px 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 2.2rem;
+            margin-bottom: 20px;
+            color: #18518f;
+            font-weight: 600;
+        }
+
+        p {
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+            color: #6b6b6b;
+            text-align: justify;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.8;
+        }
+
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .feature {
+            background-color: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: left;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .feature:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .feature h3 {
+            font-size: 1.4rem;
+            color: #18518f;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .feature p {
+            font-family: 'Roboto', sans-serif;
+            font-size: 1rem;
+            color: #686666;
+            margin-bottom: 0;
+            line-height: 1.6;
+        }
+
+        .links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 40px;
+        }
+
+        .links a {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: #18518f;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            font-weight: 500;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .links a:hover {
+            background-color: #133c6d;
+            transform: scale(1.05);
+        }
+
+        footer {
+            background-color: #363535;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: auto;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.2rem;
+            }
+
+            h2 {
+                font-size: 1.8rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+
+            .feature {
+                width: 100%;
+                max-width: 300px;
+            }
+
+            .links a {
+                padding: 10px 20px;
+                font-size: 0.9rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.6rem;
+            }
+
+            p {
+                font-size: 0.9rem;
+            }
+
+            .links {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .links a {
+                width: 80%;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Projeto Gênesis</h1>
+    </header>
+    <div class="container">
+        <h2>Bem-vindo ao Projeto Gênesis</h2>
+        <p>
+            O Projeto Gênesis nasceu com a missão de desbravar o desconhecido e trazer à sociedade ferramentas poderosas que, até então, estavam fora do alcance do público geral. Nosso objetivo é democratizar o acesso a tecnologias inovadoras e recursos essenciais que podem revolucionar a forma como interagimos com o mundo digital.
+        </p>
+        <div class="features">
+            <div class="feature">
+                <h3>Sistema de Rastreio IP</h3>
+                <p>
+                    Uma ferramenta avançada que permite entender e monitorar atividades na internet com precisão e segurança.
+                </p>
+            </div>
+            <div class="feature">
+                <h3>Gerador de Senhas Seguras</h3>
+                <p>
+                    Criado para garantir a proteção dos seus dados, gerando senhas robustas e invioláveis.
+                </p>
+            </div>
+        </div>
+        <div class="links">
+            <h3>Acesse nossas ferramentas:</h3>
+            <a href="https://henriquedev25.github.io/Genesis/" target="_blank">Sistema de Rastreio IP</a>
+            <a href="https://henriquedev25.github.io/Genesis-Senhas/" target="_blank">Gerador de Senhas</a>
+            <!-- Adicione mais links conforme necessário -->
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2025 Projeto Gênesis. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
